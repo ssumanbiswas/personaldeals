@@ -37,7 +37,7 @@ def makeWebhookResult(req):
     
     cost = {'Indian Airlines':2, 'Delta Airlines':2.5, 'American Airlines':3, 'BestBuy':4, 'Ebay':5, 'Amazon':1.5 , 'Target':2 }
     
-    speech = "Hello user I found " + str(cost[zone]) + " percent cash back offer in "  + zone + " for spend of dollar " + dollar + "."
+    speech = "Hello user I found " + str(cost[zone]) + " percent cash back offer in "  + zone + " for spend of dollar " + dollars + "."
 
     print("Response:")
     print(speech)
