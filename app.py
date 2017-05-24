@@ -33,10 +33,11 @@ def makeWebhookResult(req):
     result = req.get("result")
     parameters = result.get("parameters")
     zone = parameters.get("merchant")
+    dollars = parameters.get("dollar")
     
-    cost = {'Indian Airlines':2, 'Delta Airlines':2.5, 'American Airlines':3, 'Best Buy':4, 'Ebay':5}
+    cost = {'Indian Airlines':2, 'Delta Airlines':2.5, 'American Airlines':3, 'BestBuy':4, 'Ebay':5, 'Amazon':1.5 , 'Target':2 }
     
-    speech = "The cost of shipping to " + zone + " is " + str(cost[zone]) + " euros."
+    speech = "Hello user I found " + str(cost[zone]) + " percent cash back offer in "  + zone + " for spend of dollar " + dollar + "."
 
     print("Response:")
     print(speech)
