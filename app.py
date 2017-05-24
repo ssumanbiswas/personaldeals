@@ -35,9 +35,9 @@ def makeWebhookResult(req):
     zone = parameters.get("merchant")
     dollars = parameters.get("dollar")
     
-    cost = {'Indian Airlines':2, 'Delta Airlines':2.5, 'American Airlines':3, 'BestBuy':4, 'Ebay':5, 'Amazon':1.5 , 'Target':2 }
+    cost = {'Indian Airlines':2, 'Delta Airlines':2.5, 'American Airlines':3, 'BestBuy':4, 'Ebay':5, 'Amazon':1.5 , 'Target':2 , 'Hilton' : 3, 'BMW' : 2.5}
     
-    speech = "Hello user I found " + str(cost[zone]) + " percent cash back offer in "  + zone + " for spend of dollar " + dollars + "."
+    speech = "Hey Suman, I found an excellent deal for you. Instead of your standard 1% on your AMEX blue cash card, I can offer" + str(cost[zone]) + " percent cash back for your current purchase of" + dollars + "or above with" + zone + ". This offer will expire in next 30 minutes."
 
     print("Response:")
     print(speech)
