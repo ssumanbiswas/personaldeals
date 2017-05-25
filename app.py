@@ -37,7 +37,7 @@ def makeWebhookResult(req):
     vid = parameters.get("VoiceIdentification")
     
     cost = {'Air India':2, 'Delta Airlines':2.5, 'American Airlines':3, 'BestBuy':4, 'Ebay':5, 'Amazon':1.5 , 'Target':5 , 'Hilton' : 3, 'BMW' : 2.5}
-    vid1 = {'0000': 'sastry','8829' : 'suman' , '0001' : 'Hema', '0002' : 'prem', '0003' : 'swarup'}
+    vid1 = {'0000': 'suman','1234': 'sastry','8829' : 'suman' , '0001' : 'Hema', '0002' : 'prem', '0003' : 'swarup'}
     #if zone == "BMW":
         #if  parameters.get("merchant") == "BMW":
         #speech = "Hey Suman, I found an excellent deal for you. Instead of your standard 1% on your AMEX blue cash card, I can offer" + str(cost[zone]) + " percent cash back for your current purchase of" + dollars + "or above with" + zone + ". This offer will expire in next 30 minutes."
@@ -45,11 +45,11 @@ def makeWebhookResult(req):
         #speech = "Hey Suman, I found an excellent deal for you. Instead of your standard 1% on your AMEX blue cash card, I can offer" + str(cost[zone]) + " percent cash back for your current purchase of" + dollars + "or above with" + zone + ". This offer will expire in next 330 minutes." 
     
     if str(zone) =='BMW':
-        speech = "Hey"+ str(vid1[vid]) + ", I could offer a deal. Instead of standard "+str(cost[zone])+" % on your AMEX blue cash card, I can offer 6 months pro-rated installment payments on your current large purchase of" + dollars + " dollars or above with " +zone+". This offer will expire in next 48 hours."
+        speech = "Hey "+ str(vid1[vid]) + ", I could offer a deal. Instead of standard "+str(cost[zone])+" % on your AMEX blue cash card, I can offer 6 months pro-rated installment payments on your current large purchase of " + dollars + " dollars or above with " +zone+". This offer will expire in next 48 hours."
     elif str(zone) == 'Target':
-        speech = "Hey" + str(vid1[vid]) + ", I located a deal for you. Since you are in " + zone + "Your Visa Chase freedom have" + str(cost[zone]) + "% cashback on Department Stores for current Quarter.I would recommend to take advantage of it."
+        speech = "Hey " + str(vid1[vid]) + ", I located a deal for you. Since you are in " + zone + "Your Visa Chase freedom have " + str(cost[zone]) + "% cashback on Department Stores for current Quarter.I would recommend to take advantage of it."
     else:
-        speech = "Hey" + str(vid1[vid]) + ", I found an excellent deal based on your Card Profiles. Instead of your standard 1% on your AMEX blue cash card, I can offer" + str(cost[zone]) + " percent cashback for your current purchase of" + dollars + " dollars or above with " + zone + ". This offer will expire in next 30 minutes." 
+        speech = "Hey " + str(vid1[vid]) + ", I found an excellent deal based on your Card Profiles. Instead of your standard 1% on your AMEX blue cash card, I can offer " + str(cost[zone]) + " percent cashback for your current purchase of " + dollars + " dollars or above with " + zone + ". This offer will expire in next 30 minutes." 
     print("Response:")
     print(speech)
 
