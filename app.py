@@ -42,8 +42,8 @@ def makeWebhookResult(req):
         #elif :
         #speech = "Hey Suman, I found an excellent deal for you. Instead of your standard 1% on your AMEX blue cash card, I can offer" + str(cost[zone]) + " percent cash back for your current purchase of" + dollars + "or above with" + zone + ". This offer will expire in next 330 minutes." 
     
-    #if  parameters.get("merchant") != "BMW":
-    speech = "Hey Suman, I found an excellent deal for you. Instead of your standard 1% on your AMEX blue cash card, I can offer" + str(cost[zone]) + " percent cash back for your current purchase of" + dollars + "or above with" + zone + ". This offer will expire in next 330 minutes." 
+    if str(zone) =='BMW':
+        speech = "Hey Suman, I found an excellent deal for you. Instead of your standard 1% on your AMEX blue cash card, I can offer" + str(cost[zone]) + " percent cash back for your current purchase of" + dollars + "or above with" + zone + ". This offer will expire in next 330 minutes." 
     print("Response:")
     print(speech)
 
