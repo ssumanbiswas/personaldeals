@@ -37,7 +37,7 @@ def makeWebhookResult(req):
     vid = parameters.get("VoiceIdentification")
     
     cost = {'Air India':2, 'Delta Airlines':2.5, 'American Airlines':3, 'BestBuy':4, 'Ebay':5, 'Amazon':1.5 , 'Target':5 , 'Hilton' : 3, 'BMW' : 2.5}
-    vid1 = {'0000': 'suman','8829' : 'suman' , '0001' : 'Hema', '0002' : 'prem', '0003' : 'swarup'}
+    vid1 = {'0000': 'sastry','8829' : 'suman' , '0001' : 'Hema', '0002' : 'prem', '0003' : 'swarup'}
     #if zone == "BMW":
         #if  parameters.get("merchant") == "BMW":
         #speech = "Hey Suman, I found an excellent deal for you. Instead of your standard 1% on your AMEX blue cash card, I can offer" + str(cost[zone]) + " percent cash back for your current purchase of" + dollars + "or above with" + zone + ". This offer will expire in next 30 minutes."
