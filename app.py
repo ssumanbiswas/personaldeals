@@ -49,7 +49,7 @@ def makeWebhookResult(req):
     elif str(zone) == 'Target':
         speech = "Hey" + str(vid1[vid]) + ", I located a deal for you. Since you are in " + zone + "Your Visa Chase freedom have" + str(cost[zone]) + "% cashback on Department Stores for current Quarter.I would recommend to take advantage of it."
     else:
-        speech = "Hey" + str(vid1[vid]) + ", I found an excellent deal based on your Card Profiles. Instead of your standard 1% on your AMEX blue cash card, I can offer" + str(cost[zone]) + " percent cash back for your current purchase of" + dollars + " dollars or above with " + zone + ". This offer will expire in next 30 minutes." 
+        speech = "Hey" + str(vid1[vid]) + ", I found an excellent deal based on your Card Profiles. Instead of your standard 1% on your AMEX blue cash card, I can offer" + str(cost[zone]) + " percent cashback for your current purchase of" + dollars + " dollars or above with " + zone + ". This offer will expire in next 30 minutes." 
     print("Response:")
     print(speech)
 
